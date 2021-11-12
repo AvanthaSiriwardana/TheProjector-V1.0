@@ -1,0 +1,13 @@
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\bin\Debug\netcoreapp3.1\TheProjector.Repository.deps.json
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\bin\Debug\netcoreapp3.1\TheProjector.Repository.dll
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\bin\Debug\netcoreapp3.1\TheProjector.Repository.pdb
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\obj\Debug\netcoreapp3.1\TheProjector.Repository.csproj.AssemblyReference.cache
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\obj\Debug\netcoreapp3.1\TheProjector.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\obj\Debug\netcoreapp3.1\TheProjector.Repository.AssemblyInfoInputs.cache
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\obj\Debug\netcoreapp3.1\TheProjector.Repository.AssemblyInfo.cs
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\obj\Debug\netcoreapp3.1\TheProjector.Repository.csproj.CoreCompileInputs.cache
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\obj\Debug\netcoreapp3.1\TheProjector.Repository.dll
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\obj\Debug\netcoreapp3.1\TheProjector.Repository.pdb
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\bin\Debug\netcoreapp3.1\TheProjector.Domain.dll
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\bin\Debug\netcoreapp3.1\TheProjector.Domain.pdb
+D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Repository\obj\Debug\netcoreapp3.1\TheProjector.Repository.csproj.CopyComplete

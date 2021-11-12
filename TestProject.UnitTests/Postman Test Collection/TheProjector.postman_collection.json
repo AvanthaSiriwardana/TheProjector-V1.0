@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "f891960b-c4a5-4693-9280-e502ee036fb9",
+		"name": "TheProjector",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"LastName\": \"A\",\r\n    \"FirstName\": \"L\",\r\n    \"UserName\": \"WE\",\r\n    \"Password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:26311/projector/persons/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "26311",
+					"path": [
+						"projector",
+						"persons",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"LastName\": \"A\",\r\n    \"FirstName\": \"L\",\r\n    \"UserName\": \"WE\",\r\n    \"Password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:26311/projector/persons/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "26311",
+					"path": [
+						"projector",
+						"persons",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Code\": \"New Code\",\r\n    \"Name\": \"New Code\",\r\n    \"Remarks\": \"New Code 2021\",\r\n    \"Budget\": 451200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:26311/projector/projects/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "26311",
+					"path": [
+						"projector",
+						"projects",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:26311/projector/projects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "26311",
+					"path": [
+						"projector",
+						"projects"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

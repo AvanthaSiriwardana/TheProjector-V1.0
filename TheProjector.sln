@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheProjector.API", "TheProjector.API\TheProjector.API.csproj", "{52C6BBF3-401B-4C44-9A51-4A22C8E3F8BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheProjector.Domain", "TheProjector.Domain\TheProjector.Domain.csproj", "{6E864902-92BA-49B9-A7A3-DF8686CAE53B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheProjector.Repository", "TheProjector.Repository\TheProjector.Repository.csproj", "{6C0D63A1-44F1-4B39-9059-F511F73CD3F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheProjector.Services", "TheProjector.Services\TheProjector.Services.csproj", "{BB4E6B54-F540-4442-B2B8-40E5348338E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject.UnitTests", "TestProject.UnitTests\TestProject.UnitTests.csproj", "{876F8C11-DF04-4CA5-83D7-B6A5242B33A1}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "theprojector.ux", "theprojector.ux\", "{0F5AB387-3F06-4529-BF3C-08573DED6EA4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_7762"
+		Debug.AspNetCompiler.PhysicalPath = "theprojector.ux\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_7762\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_7762"
+		Release.AspNetCompiler.PhysicalPath = "theprojector.ux\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_7762\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "7762"
+		SlnRelativePath = "theprojector.ux\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52C6BBF3-401B-4C44-9A51-4A22C8E3F8BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C6BBF3-401B-4C44-9A51-4A22C8E3F8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C6BBF3-401B-4C44-9A51-4A22C8E3F8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C6BBF3-401B-4C44-9A51-4A22C8E3F8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E864902-92BA-49B9-A7A3-DF8686CAE53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E864902-92BA-49B9-A7A3-DF8686CAE53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E864902-92BA-49B9-A7A3-DF8686CAE53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E864902-92BA-49B9-A7A3-DF8686CAE53B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0D63A1-44F1-4B39-9059-F511F73CD3F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0D63A1-44F1-4B39-9059-F511F73CD3F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0D63A1-44F1-4B39-9059-F511F73CD3F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0D63A1-44F1-4B39-9059-F511F73CD3F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB4E6B54-F540-4442-B2B8-40E5348338E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4E6B54-F540-4442-B2B8-40E5348338E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4E6B54-F540-4442-B2B8-40E5348338E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4E6B54-F540-4442-B2B8-40E5348338E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{876F8C11-DF04-4CA5-83D7-B6A5242B33A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876F8C11-DF04-4CA5-83D7-B6A5242B33A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876F8C11-DF04-4CA5-83D7-B6A5242B33A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876F8C11-DF04-4CA5-83D7-B6A5242B33A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F5AB387-3F06-4529-BF3C-08573DED6EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F5AB387-3F06-4529-BF3C-08573DED6EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F5AB387-3F06-4529-BF3C-08573DED6EA4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F5AB387-3F06-4529-BF3C-08573DED6EA4}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A9193EA-6479-4E3D-B111-93468239BD17}
+	EndGlobalSection
+EndGlobal

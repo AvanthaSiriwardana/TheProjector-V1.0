@@ -1,6 +1,6 @@
-# Getting Started .net core web api with React
+# Getting Started .NET Core Web API with React
 
-This is a simple application done with Microsoft .net core 3.1 & React.
+This is a simple application done with Microsoft .NET Core 3.1 & React.
 
 ## It has below applications;
 
@@ -13,13 +13,23 @@ This is a simple application done with Microsoft .net core 3.1 & React.
 3. React application
   - theprojector.ux --> NOT the best UI. Just to check the functionalities and behavior. We can update the UI later with remaining functionalities.
 
-In the project directory, you can run:
+Setup Database Migration:
+  - Go to "Package Manager Console" and select the Default Project "TheProjector.Domain"
+  - Run the command add-migration and give a name if you like. I gave it as "TheProjectorInitialMigrationV10"
+  - Run the command update-database
+  - Go to SQL Serve and verify the database with the name "TheProjector"
+  - Verify the tables and seeded data.
 
-Go to theprojector.ux\src and execute below command in command prompt to launch the reach application. 
+![image](https://user-images.githubusercontent.com/48938732/141614879-88be12e7-a220-4d9a-b5ab-77a45090fd7d.png)
+
+
+To run the **React** application: 
+
+  - Go to theprojector.ux\src and execute below command in command prompt to launch the reach application. 
 
 ### `npm start`
 
 ## Prerequisites 
-  - SQL Server -> I use SQL Server 2014 
-  - .Net Core Framework 3.1.0 or above
+  - SQL Server -> I used SQL Server 2014 
+  - .Net Core 3.1.0 or above
   - Node.js --> My version is Node.js v16.10.0.

@@ -1,8 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using TheProjector.Domain.ResponseCodes;
 using TheProjector.Repository;
 
@@ -12,7 +8,7 @@ namespace TheProjector.Services
 	{
 		private readonly IUnitOfWork _unitOfWork;
 
-		public PersonService(IUnitOfWork unitOfWork) 
+		public PersonService(IUnitOfWork unitOfWork)
 		{
 			_unitOfWork = unitOfWork;
 		}
@@ -34,14 +30,12 @@ namespace TheProjector.Services
 				});
 
 				await _unitOfWork.CompleteAsync();
-
 				responseBase.ResponseCode = ResponseCodes.TP1002_01;
 			}
 			catch
 			{
 				responseBase.ResponseCode = ResponseCodes.TP1002_02;
 			}
-
 			return responseBase;
 		}
 	}

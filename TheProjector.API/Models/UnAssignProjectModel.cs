@@ -7,5 +7,7 @@ namespace TheProjector.API.Models
 {
 	public class UnAssignProjectModel
 	{
+		public int ProjectId { get; set; }
+		public int PersonId { get; set; }
 	}
 }

@@ -35,7 +35,7 @@ namespace TheProjector.API.Controllers
 				return Ok(response);
 			}
 
-			return BadRequest();
+			return BadRequest(response);
 		}
 	}
 }

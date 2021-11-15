@@ -14,14 +14,16 @@ namespace TheProjector.Repository
 
 		public IPersonRepository Person { get; private set; }
 		public IProjectRepository Project { get; private set; }
+		public IProjectAssignmentRepository ProjectAssignmentRepository { get; private set; }
 
 		public UnitOfWork(TheProjectorContext context, ILoggerFactory loggerFactory)
 		{
 			_context = context;
 			_logger = loggerFactory.CreateLogger("TheProjector.Logs");
 
-			Person = new PersonRepository(context, _logger);
-			Project = new ProjectRepository(context, _logger);
+			Person = new PersonRepository(_context, _logger);
+			Project = new ProjectRepository(_context, _logger);
+			ProjectAssignmentRepository = new ProjectAssignmentRepository(_context, _logger);
 		}
 
 		public async Task CompleteAsync()

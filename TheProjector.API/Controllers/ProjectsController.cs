@@ -41,7 +41,7 @@ namespace TheProjector.API.Controllers
 				return Ok(response);
 			}
 
-			return BadRequest();
+			return BadRequest(response);
 		}
 
 		[HttpGet]
@@ -54,7 +54,7 @@ namespace TheProjector.API.Controllers
 				return Ok(response);
 			}
 
-			return BadRequest();
+			return BadRequest(response);
 		}
 	}
 }

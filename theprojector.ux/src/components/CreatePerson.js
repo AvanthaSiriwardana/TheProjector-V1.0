@@ -16,8 +16,8 @@ export class CreatePerson extends Component {
     validateForm() {
         return (this.state.lastname.length > 2 && this.state.lastname.length < 50) &&
                (this.state.firstname.length > 2 && this.state.firstname.length < 50) &&
-               (this.state.username.length > 5 && this.state.firstname.length < 200) &&
-               (this.state.password.length > 7 && this.state.firstname.length < 11)
+               (this.state.username.length > 5 && this.state.username.length < 200) &&
+               (this.state.password.length > 7 && this.state.password.length < 11)
     }
 
       // Set State
@@ -65,7 +65,7 @@ alert('Failed....')
     render() { 
         return ( 
             <div className="formtext">
-                <h3>Create Person</h3>
+        <h3>Create Person</h3>
         <Form onSubmit={this.handleSubmit}>
           <Form.Group controlId="lastname" bsSize="small">
             <Form.Control

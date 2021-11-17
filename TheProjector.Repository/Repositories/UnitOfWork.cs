@@ -14,7 +14,7 @@ namespace TheProjector.Repository
 
 		public IPersonRepository Person { get; private set; }
 		public IProjectRepository Project { get; private set; }
-		public IProjectAssignmentRepository ProjectAssignmentRepository { get; private set; }
+		public IProjectAssignmentRepository ProjectAssignment { get; private set; }
 
 		public UnitOfWork(TheProjectorContext context, ILoggerFactory loggerFactory)
 		{
@@ -23,7 +23,7 @@ namespace TheProjector.Repository
 
 			Person = new PersonRepository(_context, _logger);
 			Project = new ProjectRepository(_context, _logger);
-			ProjectAssignmentRepository = new ProjectAssignmentRepository(_context, _logger);
+			ProjectAssignment = new ProjectAssignmentRepository(_context, _logger);
 		}
 
 		public async Task CompleteAsync()

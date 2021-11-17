@@ -22,6 +22,8 @@ namespace TheProjector.Repository
 			_context = context;
 			_logger = logger;
 			_dbSet = context.Set<TEntity>();
+			_context.Persons.Include(x => x.ProjectAssignments).ToList();
+			_context.Projects.Include(x => x.ProjectAssignments).ToList();
 		}
 
 		public virtual async Task Add(TEntity entity)
@@ -39,14 +41,14 @@ namespace TheProjector.Repository
 			return await _dbSet.FindAsync(id);
 		}
 
-		public virtual Task<IEnumerable<TEntity>> GetAll()
+		public virtual async Task<IEnumerable<TEntity>> GetAll()
 		{
-			throw new NotImplementedException();
+			return await _dbSet.ToListAsync();
 		}
 
-		public Task Remove(TEntity entity)
+		public void Remove(TEntity entity)
 		{
-			throw new NotImplementedException();
+			_dbSet.Remove(entity);
 		}
 	}
 }

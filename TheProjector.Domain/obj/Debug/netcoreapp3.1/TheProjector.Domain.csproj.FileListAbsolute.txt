@@ -3,7 +3,6 @@ D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Domain\bin\Debug\netco
 D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Domain\bin\Debug\netcoreapp3.1\TheProjector.Domain.runtimeconfig.dev.json
 D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Domain\bin\Debug\netcoreapp3.1\TheProjector.Domain.dll
 D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Domain\bin\Debug\netcoreapp3.1\TheProjector.Domain.pdb
-D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Domain\obj\Debug\netcoreapp3.1\TheProjector.Domain.csproj.AssemblyReference.cache
 D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Domain\obj\Debug\netcoreapp3.1\TheProjector.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Domain\obj\Debug\netcoreapp3.1\TheProjector.Domain.AssemblyInfoInputs.cache
 D:\GitHub Projects\TheProjector\TheProjector\TheProjector.Domain\obj\Debug\netcoreapp3.1\TheProjector.Domain.AssemblyInfo.cs

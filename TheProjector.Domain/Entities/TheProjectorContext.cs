@@ -6,7 +6,7 @@ namespace TheProjector.Domain.Entities
 	{
 		public TheProjectorContext()
 		{
-
+			
 		}
 
 		public TheProjectorContext(DbContextOptions<TheProjectorContext> dbContextOptions)
@@ -40,6 +40,8 @@ namespace TheProjector.Domain.Entities
 				.HasOne(am => am.Project)
 				.WithMany(m => m.ProjectAssignments)
 				.HasForeignKey(am => am.ProjectId);
+
+			
 
 			modelBuilder.Entity<Project>(entity =>
 			{
@@ -105,7 +107,7 @@ namespace TheProjector.Domain.Entities
 			},
 				new Person
 				{
-					Id = 2, 
+					Id = 2,
 					FirstName = "Person 2",
 					LastName = "Person 2",
 					UserName = "Person 2",

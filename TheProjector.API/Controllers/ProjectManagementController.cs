@@ -38,11 +38,22 @@ namespace TheProjector.API.Controllers
 			return BadRequest(response);
 		}
 
-		//[HttpPost]
-		//[Route("unassign")]
-		//public async Task<IActionResult> UnassignPersonToProjectAsync([FromBody] UnAssignProjectModel request)
-		//{
+		[HttpDelete]
+		[Route("unassign")]
+		public async Task<IActionResult> UnAssignPersonToProjectAsync([FromBody] UnAssignProjectModel request)
+		{
+			var response = await assignmentService.UnassignPersonToProject(new UnAssignmentRequest
+			{
+				PersonId = request.PersonId,
+				ProjectId = request.ProjectId
+			});
 
-		//}
+			if (response.ResponseCode == ResponseCodes.TP1003_01)
+			{
+				return Ok(response);
+			}
+
+			return BadRequest(response);
+		}
 	}
 }

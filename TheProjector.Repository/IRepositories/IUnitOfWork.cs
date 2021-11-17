@@ -9,7 +9,8 @@ namespace TheProjector.Repository
 	{
 		IPersonRepository Person { get; }
 		IProjectRepository Project { get; }
-		IProjectAssignmentRepository ProjectAssignmentRepository { get; }
+		IProjectAssignmentRepository ProjectAssignment { get; }
+
 
 		Task CompleteAsync();
 		void Dispose();

@@ -12,7 +12,7 @@ export class SiteNavigation extends Component {
             <Nav.Link href="/">The Projector</Nav.Link>
             <Nav.Link href="/projector/signin">SIgn In</Nav.Link>
             <Nav.Link href="/projector/projects">Projects</Nav.Link>
-            <Nav.Link href="/projector/persons/AssignUnassignPerson">Assign/ UnAssign Person</Nav.Link>
+            <Nav.Link href="/projector/projects/assignments">Assign Person</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

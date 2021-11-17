@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 
 using TheProjector.Domain.ResponseCodes;
 using TheProjector.Repository;
@@ -20,7 +21,7 @@ namespace TheProjector.Services
 
 			try
 			{
-				await _unitOfWork.ProjectAssignmentRepository.Add(new Domain.Entities.ProjectAssignment
+				await _unitOfWork.ProjectAssignment.Add(new Domain.Entities.ProjectAssignment
 				{
 					PersonId = request.PersonId,
 					ProjectId = request.ProjectId
@@ -38,13 +39,13 @@ namespace TheProjector.Services
 			return responseBase;
 		}
 
-		public async Task<ResponseBase> UnassignPersonToProject(AssignmentRequest request)
+		public async Task<ResponseBase> UnassignPersonToProject(UnAssignmentRequest request)
 		{
 			var responseBase = new ResponseBase();
 
 			try
 			{
-				await _unitOfWork.ProjectAssignmentRepository.Remove(new Domain.Entities.ProjectAssignment
+				_unitOfWork.ProjectAssignment.Remove(new Domain.Entities.ProjectAssignment
 				{
 					PersonId = request.PersonId,
 					ProjectId = request.ProjectId
@@ -54,8 +55,9 @@ namespace TheProjector.Services
 
 				responseBase.ResponseCode = ResponseCodes.TP1004_01;
 			}
-			catch
+			catch (Exception ex)
 			{
+				var exe = ex.Message;
 				responseBase.ResponseCode = ResponseCodes.TP1004_02;
 			}
 

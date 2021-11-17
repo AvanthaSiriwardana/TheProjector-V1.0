@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -8,52 +8,50 @@ export class ListProjects extends Component {
         this.state = { projectList: [] }
     }
 
-    componentDidMount()
-    {
+    componentDidMount() {
         this.refreshList();
     }
- 
-    refreshList (){
+
+    refreshList() {
         fetch('http://localhost:26311/projector/projects')
-        .then(response => response.json())
-        .then(data => {
-            this.setState({projectList:data.result})
-        });
+            .then(response => response.json())
+            .then(data => {
+                this.setState({ projectList: data.result })
+            });
     }
 
-    render() { 
+    render() {
 
-        const {projectList}= this.state;
+        const { projectList } = this.state;
 
-        return ( 
+        return (
             <div className="mt-5 d-flex justify-content-right">
                 <Table responsive="sm" >
-                <thead>
-                    <tr>
-                    <th>Project Name</th>
-                    <th>Budget</th>
-                    <th>Tasks</th>
-                    </tr>
-                </thead>
-                <tbody>
-                {projectList.map(project=>
-                    <tr key={project.id}> 
-                    <td>{project.name} </td>
-                    <td>{project.budget} </td>
-                    </tr>
-                    )}
-                </tbody>
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Budget</th>
+                            <th>Tasks</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {projectList.map(project =>
+                            <tr key={project.id}>
+                                <td>{project.name} </td>
+                                <td>{project.budget} </td>
+                            </tr>
+                        )}
+                    </tbody>
                 </Table>
 
                 <div>
-                <ul>
                     <p>Other Tasks</p>
-                    <li><Link to="/projector/projects/create">Create Project</Link></li>
-                    <li><Link to="/projector/persons/create">Create Person</Link></li>
-                </ul>
-            </div>
-
+                    <Link to="/projector/projects/create">Create Project</Link>
+                    <br />
+                    <Link to="/projector/persons/create">Create Person</Link>
                 </div>
-         );
+            </div>
+        );
     }
 }

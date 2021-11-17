@@ -81,9 +81,8 @@ alert('Failed....')
                   required
                 />
               </Form.Group>
-              <Button variant="primary"
-                block
-                bsSize="small"
+
+              <Button variant="primary" size="sm"
                 disabled={!this.validateForm()}
                 type="submit"
               >Login</Button>

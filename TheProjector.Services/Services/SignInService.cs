@@ -28,7 +28,7 @@ namespace TheProjector.Services
 				{
 					response.ResponseCode = ResponseCodes.TP1005_01;
 
-					response.Result = new Person { FirstName = person.FirstName, LastName = person.LastName, UserName = person.UserName };
+					response.Result = new Person { Id = person.Id, FirstName = person.FirstName, LastName = person.LastName, UserName = person.UserName };
 
 					return response;
 				}

@@ -8,24 +8,25 @@ import { CreatePerson } from "./components/CreatePerson";
 import { CreateProject } from "./components/CreateProject";
 import { Login } from './components/Login';
 import { ListProjects } from './components/ListProjects';
-import { AssignUnassignPerson } from './components/AssignUnassignPerson';
-
+import { ProjectAssignment } from './components/ProjectAssignment';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
-      <SiteNavigation />
-      <Switch>
-        <Route path='/' component={Home} exact />
-        <Route path='/projector/signin' component={Login} />
-        <Route path='/projector/projects' component={ListProjects} exact />
-        <Route path='/projector/projects/create' component={CreateProject} />
-        <Route path='/projector/persons/create' component={CreatePerson} exact />
-        <Route path='/projector/persons/AssignUnassignPerson' component={AssignUnassignPerson} />
-      </Switch>
-    </Router>
+    <div>
+      <Router>
+        <SiteNavigation />
+        <Switch>
+          <Route path='/' component={Home} exact />
+          <Route path='/projector/signin' component={Login} />
+          <Route path='/projector/projects' component={ListProjects} exact />
+          <Route path='/projector/projects/create' component={CreateProject} />
+          <Route path='/projector/persons/create' component={CreatePerson} exact />
+          <Route path='/projector/projects/assignments' component={ProjectAssignment} />
+        </Switch>
+      </Router>
+    </div>
 
   );
 }

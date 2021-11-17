@@ -12,10 +12,10 @@ namespace TheProjector.Repository
 
 		Task<IEnumerable<TEntity>> GetAll();
 
-		Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> predicate);
+		Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity,  bool>> predicate);
 
 		Task Add(TEntity entity);
 
-		Task Remove(TEntity entity);
+		void Remove(TEntity entity);
 	}
 }

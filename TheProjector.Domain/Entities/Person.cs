@@ -12,7 +12,6 @@ namespace TheProjector.Domain.Entities
 			this.ProjectAssignments = new HashSet<ProjectAssignment>();
 		}
 
-		[Key()]
 		public int Id { get; set; }
 		[MinLength(2)]
 		public string LastName { get; set; }

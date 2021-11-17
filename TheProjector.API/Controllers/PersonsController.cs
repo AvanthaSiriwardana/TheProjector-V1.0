@@ -45,5 +45,33 @@ namespace TheProjector.API.Controllers
 
 			return BadRequest(response);
 		}
+
+		[HttpGet]
+		[Route("getmembersintheproject/{projectId:int}")]
+		public async Task<IActionResult> GetPersonsForTheSelectedProject(int projectId)
+		{
+			var response = await personService.GetPersonsInTheSelectedProject(projectId);
+
+			if (response.ResponseCode == ResponseCodes.TP1000_01)
+			{
+				return Ok(response);
+			}
+
+			return BadRequest(response);
+		}
+
+		[HttpGet]
+		[Route("getmembersnotintheproject/{projectId:int}")]
+		public async Task<IActionResult> GetPersonsNotInTheSelectedProject(int projectId)
+		{
+			var response = await personService.GetPersonsNotInTheSelectedProject(projectId);
+
+			if (response.ResponseCode == ResponseCodes.TP1000_01)
+			{
+				return Ok(response);
+			}
+
+			return BadRequest(response);
+		}
 	}
 }
